@@ -1,0 +1,50 @@
+﻿@page "/cart"
+
+<PageTitle>Cart</PageTitle>
+
+@using ManyParts.WebShop.Api
+@using ManyParts.WebShop.Domain
+@inject ProductsController ProductsController
+@inject CartsController CartsController
+
+<h1>Carts</h1>
+
+<p>Here you find all the products in your cart.</p>
+
+@if (_cart == null || _products == null)
+{
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Amount</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in _cart.Items)
+        {
+            <tr>
+                <td>@_products.Single(product => product.Id == item.ProductId).Name</td>
+                <td>@item.Amount</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    private Cart? _cart;
+    private IEnumerable<Product>? _products;
+    
+    protected override void OnInitialized()
+    {
+        _cart = CartsController.Get();
+        _products = ProductsController.Get();
+    }
+}

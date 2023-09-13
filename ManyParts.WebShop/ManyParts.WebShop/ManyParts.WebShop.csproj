@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="ManyParts.WebShop.db" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ManyParts.WebShop.Api\ManyParts.WebShop.Api.csproj" />
+      <ProjectReference Include="..\ManyParts.WebShop.Application\ManyParts.WebShop.Application.csproj" />
+      <ProjectReference Include="..\ManyParts.WebShop.Infrastructure\ManyParts.WebShop.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\..\README.md">
+        <Link>README.md</Link>
+      </Content>
+    </ItemGroup>
+
+</Project>
