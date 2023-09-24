@@ -1,5 +1,6 @@
 using ManyParts.WebShop.Api;
 using ManyParts.WebShop.Application;
+using ManyParts.WebShop.Contract;
 using ManyParts.WebShop.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -1,5 +1,5 @@
-﻿using ManyParts.WebShop.Domain;
-using ManyParts.WebShop.Infrastructure;
+﻿using ManyParts.WebShop.Contract;
+using ManyParts.WebShop.Domain;
 
 namespace ManyParts.WebShop.Application;
 
