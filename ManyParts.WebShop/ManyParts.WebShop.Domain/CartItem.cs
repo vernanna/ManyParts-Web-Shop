@@ -2,7 +2,7 @@
 
 public class CartItem
 {
-    private CartItem(Guid productId, int amount)
+    public CartItem(Guid productId, int amount)
     {
         ProductId = productId;
         Amount = amount;
@@ -10,7 +10,7 @@ public class CartItem
 
     public Guid ProductId { get; private set; }
     
-    public int Amount { get; private set; }
+    public int Amount { get; set; }
 
     internal void Add(int amount)
     {

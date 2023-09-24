@@ -4,8 +4,9 @@
 
 @using ManyParts.WebShop.Api
 @using ManyParts.WebShop.Domain
+@using CartsController = ManyParts.WebShop.ShittyCartsController
 @inject ProductsController ProductsController
-@inject CartsController CartsController
+@inject CartsController ShittyCartsController
 
 <h1>Products</h1>
 
@@ -48,6 +49,6 @@ else
 
     private void AddToCart(Guid productId)
     {
-        CartsController.Add(productId, 1);
+        ShittyCartsController.Add(productId, 1);
     }
 }

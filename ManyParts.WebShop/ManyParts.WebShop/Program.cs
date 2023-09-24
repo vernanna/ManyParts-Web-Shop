@@ -1,3 +1,4 @@
+using ManyParts.WebShop;
 using ManyParts.WebShop.Api;
 using ManyParts.WebShop.Application;
 using ManyParts.WebShop.Contract;
@@ -10,7 +11,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 
 builder.Services.AddScoped<ProductsController>();
-builder.Services.AddScoped<CartsController>();
+builder.Services.AddScoped<ShittyCartsController>();
 builder.Services.AddScoped<DatabaseContext>();
 builder.Services.AddScoped<IProductsRepository, ProductsRepository>();
 builder.Services.AddScoped<ICartsRepository, CartsRepository>();

@@ -11,7 +11,7 @@ public class Cart
 
     public Guid Id { get; private set; }
 
-    public IReadOnlyCollection<CartItem> Items => _items;
+    public List<CartItem> Items => _items;
 
     public static Cart Create() => new(Guid.NewGuid());
 
