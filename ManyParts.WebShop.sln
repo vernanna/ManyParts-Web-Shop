@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManyParts.WebShop", "ManyPa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManyParts.WebShop.Tests", "ManyParts.WebShop\ManyParts.WebShop.Tests\ManyParts.WebShop.Tests.csproj", "{CA4F175B-86E7-41EA-9922-118194299A52}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManyParts.WebShop.Contract", "ManyParts.WebShop\ManyParts.WebShop.Contract\ManyParts.WebShop.Contract.csproj", "{3A298AF1-8ED3-4B8F-A818-C145F32662D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{CA4F175B-86E7-41EA-9922-118194299A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA4F175B-86E7-41EA-9922-118194299A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA4F175B-86E7-41EA-9922-118194299A52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A298AF1-8ED3-4B8F-A818-C145F32662D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A298AF1-8ED3-4B8F-A818-C145F32662D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A298AF1-8ED3-4B8F-A818-C145F32662D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A298AF1-8ED3-4B8F-A818-C145F32662D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

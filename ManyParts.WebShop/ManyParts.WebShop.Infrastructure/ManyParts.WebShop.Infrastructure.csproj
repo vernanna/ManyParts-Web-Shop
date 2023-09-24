@@ -17,6 +17,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\ManyParts.WebShop.Contract\ManyParts.WebShop.Contract.csproj" />
       <ProjectReference Include="..\ManyParts.WebShop.Domain\ManyParts.WebShop.Domain.csproj" />
     </ItemGroup>
 

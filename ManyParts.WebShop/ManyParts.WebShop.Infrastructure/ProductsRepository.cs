@@ -1,4 +1,5 @@
-﻿using ManyParts.WebShop.Domain;
+﻿using ManyParts.WebShop.Contract;
+using ManyParts.WebShop.Domain;
 using Microsoft.EntityFrameworkCore;
 
 namespace ManyParts.WebShop.Infrastructure;

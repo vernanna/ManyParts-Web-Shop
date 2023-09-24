@@ -1,6 +1,6 @@
 ﻿using ManyParts.WebShop.Domain;
 
-namespace ManyParts.WebShop.Infrastructure;
+namespace ManyParts.WebShop.Contract;
 
 public interface ICartsRepository
 {
