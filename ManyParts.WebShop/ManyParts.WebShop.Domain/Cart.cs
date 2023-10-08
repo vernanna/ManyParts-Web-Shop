@@ -29,4 +29,15 @@ public class Cart
             _items.Add(item);
         }
     }
+    
+    public void Delete(Product product)
+    {
+        var i = _items.SingleOrDefault(x => x.ProductId == product.Id);
+        if (i == null)
+        {
+            return;
+        }
+
+        _items.Remove(i);
+    }
 }

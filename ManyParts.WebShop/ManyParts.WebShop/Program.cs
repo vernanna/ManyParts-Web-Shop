@@ -17,6 +17,7 @@ builder.Services.AddScoped<ICartsRepository, CartsRepository>();
 builder.Services.AddScoped<IGetProductsUseCase, GetProductsUseCase>();
 builder.Services.AddScoped<IGetCartUseCase, GetCartUseCase>();
 builder.Services.AddScoped<IAddProductToCartUseCase, AddProductToCartUseCase>();
+builder.Services.AddScoped<IDeleteProductFromCartUseCase, DeleteProductFromCartUseCase>();
 
 var app = builder.Build();
 
